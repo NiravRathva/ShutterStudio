@@ -1,0 +1,332 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #242424 !important;
+}
+
+.main-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  /* Add other styles as needed */
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 10px;
+    /* Adjust other styles for mobile layout */
+  }
+}
+
+/* header section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  color: white
+}
+
+.logo img {
+  height: 50px;
+  color:#242424;
+  /* max-width:00px; */
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #e61d36;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    margin-bottom: 10px;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .cta-button {
+    margin-top: 10px;
+  }
+}
+
+/* hero section  */
+.hero {
+  position: relative;
+  background-color: #f5f5f5;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* background-image: url("https://images.unsplash.com/photo-1584906569925-c80e90e97060?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2FtYXJhfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60");
+  background-repeat: no-repeat; */
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-headline {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #242424;
+}
+
+.hero-description {
+  font-size: 18px;
+  color: #333333;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-image {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .hero-content {
+    margin-bottom: 40px;
+  }
+
+  .hero-headline {
+    font-size: 24px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+}
+
+/* features section */
+.features {
+ background-color: #ffffff ;;
+  padding: 50px;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #242424;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: #ffffff;
+}
+
+.feature {
+  max-width: 300px;
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  font-size: 16px;
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+  .features {
+    padding: 30px;
+  }
+
+  .section-heading {
+    font-size: 24px;
+  }
+
+  .feature {
+    max-width: 100%;
+  }
+}
+
+/* Testimonials Section  */
+.testimonials-section {
+  padding: 40px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.testimonial {
+  max-width: 200px;
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.testimonial-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #242424;
+}
+
+.testimonial-quote {
+  font-style: italic;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .testimonial {
+    max-width: 100%;
+    margin: 20px 20px;
+  }
+}
+
+/* CSS for pricing packages */
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.pricing-card {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.pricing-card h3 {
+  color: #242424;
+  ;
+}
+
+.pricing-card p {
+  color: #333333;
+}
+
+/* CSS for mobile responsiveness */
+@media screen and (max-width: 600px) {
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    width: 80%;
+  }
+}
+
+/* CTA Section  */
+.cta-section {
+  background-color: #ffffff;
+  padding: 40px;
+  text-align: center;
+}
+
+.cta-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #242424;
+}
+
+.cta-button {
+  padding: 12px 20px;
+  font-size: 18px;
+  background-color: #e61d36;
+  color: #ffff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* CSS for mobile responsiveness */
+@media screen and (max-width: 600px) {
+  .cta-section {
+    padding: 20px;
+  }
+}
+
+/* CSS for footer */
+.footer {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* CSS for mobile responsiveness */
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 5px;
+  }
+}
